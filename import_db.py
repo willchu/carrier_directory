@@ -1,6 +1,6 @@
 import pdb
 import psycopg2
-CENSUS_FILE = 'CENSUS_PUB_20150512.txt.utf8'
+CENSUS_FILE = 'CENSUS_PUB_20160309.txt'
 
 def get_columns():
   columns_file = open('columns.csv', 'rU')
@@ -51,4 +51,3 @@ for line in fmcsa_file:
     print e
 
 print "inserted:{0} of {1} rows. We skipped {2} rows".format(inserted_row_count, row_num, row_num - inserted_row_count)
-
